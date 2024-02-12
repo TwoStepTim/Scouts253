@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troop 253 Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-GLhlTQ8iK9tGRWYWSKxVEJtPjMqq9/6Z/hRTt8+pjUddI2XmK1Gme/EI0M5wF5J" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/BSA-EM.png">
+  <link rel="stylesheet" href="../dist/style1.css">
+    <link rel="stylesheet" href="../dist/style1.css">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap">
+  <style>
+    .card {
+      border-radius: 90px;
+      border: 20px solid #efd08b; /* Specify the border style */
+      background-color: #f2e4c3;
+    }
+
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .position-img {
+      border-radius: 30%;
+      width: 15vw;
+      height: auto;
+      object-fit: cover;
+    color: #f2e4c3;
+    }
+
+    .position-title,
+    .person-name {
+      text-align: center;
+    }
+    button{
+      border-radius: 60px;
+      background-color: #fbdb8f;
+      border: none;
+      width: 25vw;
+      height: 15vw;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class= sidebar>
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
+    <nav class="navbar_moblie" id="myNavbar">
+        <ul>
+            <li><a href="../dist/index.html" class="nav-link">Home</a></li>
+            <li><a href="#expertise" class="nav-link">Leadership</a></li>
+            <li><a href="#work" class="nav-link">Calender</a></li>
+            <li><a href="#contact" class="nav-link">Activies</a></li>
+            <li><a href="#Cub Scouts">Cub Scouts</a></li>
+        </ul>
+            <p>
+                 2023. Created with passion by Circuit Tech Solutions LLC. 
+                All rights reserved.
+            </p>
+    </nav>
+</div>
+<div class="topnav">
+    <a href="../dist/index.html"><img src="../img/BSA-EM.png" alt=""></a>
+    <div class="topnav-right">
+      <a href="/Pages/TroopLeadership.html">Troop Leadership</a>
+    <a href="#about">Calender</a>
+    <a href="#search">Gallery</a>
+    <a href="/Pages/CubScoutsAct.html"> Pack Activies</a>
+    <a href="/Pages/CubScouts.html">Cub Scouts</a>
+    </div>
+  </div>
+  <div class="container">
+    <section class="header">
+      <h1 class="MainTitle" style="margin-top: 5vh;">LeaderShip</h1>
+    </section>
+    <section class="Leaders">
+      <!-- For desktop and larger screens -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Position Title</h5>
+              <img class="position-img" src="https://via.placeholder.com/150" alt="Position Image">
+              <p class="person-name">Person Name</p>
+            </div>
+            <div class="col">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam suscipit ultrices ex, non rutrum risus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For mobile devices -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card p-4" style=" width: 90%; height: 90vh;">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Person 1 Name</p>
+              <p class="position-title" style="font-size: 3vw;">Position 1 Title</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 50vw; margin-bottom:0px ;" src="https://via.placeholder.com/160" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton1" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <!-- Bio Pop-up -->
+      <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bioModalLabel">Bio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="bioContent"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+      <footer class="bg-dark text-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-2 text-center">
+                <img src="../img/BSA-EM.png" alt="BSA Logo" class="img-fluid">
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="mb-4">Scouts of 253</h1>
+                <h3>Watts Chapel Baptist Church, 3703 Трион-роуд, Raleigh, NC 27606</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-auto mb-3 mb-md-0">
+                        <i class="fa fa-phone"></i>
+                        <p><a href="tel:+19802887801">(980) 288-7801</a></p>
+                    </div>
+                    <div class="col-6 col-md-auto">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:BSA@GMAIL.COM">BSA@GMAIL.COM</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Add click event listeners to the bio buttons
+    document.getElementById('bioButton1').addEventListener('click', function() {
+      showBio('Bio content for Person 1');
+    });
+
+    // Add similar event listeners for other people's buttons
+  });
+
+  function showBio(bioContent) {
+    // Update the bio pop-up content
+    document.getElementById('bioContent').textContent = bioContent;
+    
+    // Show the bio pop-up
+    var bioModal = new bootstrap.Modal(document.getElementById('bioModal'));
+    bioModal.show();
+  }
+  </script>
+
+<script src="/dist/script.js"></script>
+</body>
+
+</html>

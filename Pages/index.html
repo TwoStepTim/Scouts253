@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Scouts of 253</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./Troop1.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-GLhlTQ8iK9tGRWYWSKxVEJtPjMqq9/6Z/hRTt8+pjUddI2XmK1Gme/EI0M5wF5J" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/BSA-EM.png">
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- partial:index.partial.html -->
+<div class="container">
+  <h1>Scouts of 253</h1>
+  <p>For the past 15 years, the Cub Scout Pack 253 and Boy Scout Troop 253 programs have led the way in changing the lives of young boys in the Triangle area through the Cub and Boy Scout of America Scouting Program</p>
+  <img src="/img/bsa.png" alt="">
+  <a href="#">Learn more</a>
+</div>
+
+<div class="blank"></div>
+
+<div class="container second">
+  
+  <div class="item">
+    <div class="img img-second"></div>
+    <div class="card">
+      <h3>Boy Scouts</h3>
+      <h5>Boy Scout Motto      </h5>
+      <p>"Be Prepared"</p>
+      <p>Explore more about Boy Scouts, where young minds embark on exciting adventures, build lifelong friendships, and develop essential skills for a brighter future.</p>
+      <a href="../dist/Troop1.html">Learn more</a>
+    </div>
+  </div>
+  <div class="item">
+    <div class="img img-third"></div>
+    <div class="card">
+      <h3>Cub Scouts</h3>
+      <h5>Cub Scout Motto </h5>
+      <p>"Do Your Best"</p>
+      <p>Experience the world of Cub Scouts, where young hearts are nurtured through fun and educational activities, fostering a sense of curiosity, camaraderie, and valuable life skills.</p>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+</div>
+
+<footer >
+  <div class="Flexcontainer">
+    <img src="../img/BSA-EM.png" alt="">
+    <div class="FlexLocation">
+      <h1>Scouts of 253</h1>
+      <h3>Watts Chapel Baptist Church, 3703 Трион-роуд, Raleigh, NC 27606</h3>
+    </div>
+    <div class="footer-center">
+      <div style="margin-bottom: -6vh;">
+        <i class="fa fa-phone"></i>
+        <p><a href="tel:+19802887801">(980) 288-7801</a></p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:BSA@GMAIL.COM">BSA@GMAIL.COM</a></p>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var images = [
+      "/img/img1.jpg",
+      "/img/img2.jpg",
+      "/img/img3.png"
+    ];
+
+    var index = 0;
+      var secondContainer = document.querySelector(".second");
+
+      function changeBackground() {
+        secondContainer.style.backgroundImage = "url(" + images[index] + ")";
+        index = (index + 1) % images.length;
+      }
+
+      // Change background every 5 seconds (5000 milliseconds)
+      setInterval(changeBackground, 5000);
+  });
+</script>
+</body>
+</html>
