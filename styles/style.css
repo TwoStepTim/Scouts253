@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('/Camp.png');
+  background-image: url('img/Camp.png');
   background-size: cover;
   background-position: center;
   
@@ -84,7 +84,7 @@ a{
   height: 1200px;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/img1.jpg');
+  background-image: url('img/img1.jpg');
   -webkit-transition: background 1.5s linear;
   -moz-transition: background 1.5s linear;
   -o-transition: background 1.5s linear;
@@ -243,7 +243,7 @@ opacity: 100%;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
-  margin-top: 3vh;
+  margin-top: 2vh;
 }
 
 .topnav img {
