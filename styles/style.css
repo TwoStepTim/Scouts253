@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('/img/Camp.png');
+  background-image: url('img/Camp.png');
   background-size: cover;
   background-position: center;
   
@@ -233,8 +233,8 @@ opacity: 100%;
   background-color: transparent;
   overflow: hidden;
   display: flex;
-  justify-content: space-between; /* Align items to the start and end of the container */
-  align-items: center; /* Center items vertically */
+  margin-top: 4vw;
+  margin-left: 6vw;
 }
 
 .topnav a {
@@ -243,7 +243,7 @@ opacity: 100%;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
-  margin-top: 2vh;
+  
 }
 
 .topnav img {
