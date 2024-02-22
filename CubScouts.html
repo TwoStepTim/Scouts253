@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Troop 253 Website</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap JavaScript -->
@@ -17,46 +21,71 @@
    
   <link rel="icon" type="image/x-icon" href="/img/BSA-EM.png">
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap">
+ 
   <style>
     .MainTitle{
       font-size: 3vw;
+  
+      text-align: center;
+
     }
     .card-title{
       font-size: 1.7vw;
+      color: var(--colormain);
+
     }
     .card-text{
       font-size: 1.3vw;
+      color: var(--colorSecond);
+
     }
-    .placeholder{
-      width: 30vw; height: 50vh; 
-    }
+    
     .list-unstyled{
       font-size: 1.4vw;
+      color: var(--colormain);
+
     }
     .header{
     margin-bottom: 10vw;
   }
     .WhatisScout{
-      font-size: 1.vw;
+      font-size: 1.7vw;
     }
     body{
-      overflow-x: hidden;
-    }
-    .card-body {
-      width: 21.5vw;
-    }
-    .card {
-    width: 100%; /* Adjust the width as needed */
- 
-      border-radius: 90px;
-      border: none; /* Specify the border style */
-      background-color: #f2e4c3;
+      text-align: center;
 
-    
+    }
+    /* Card body styles */
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  text-align: center; /* Center text horizontally */
+}
+
+.card {
+  width: 100%; /* Adjust the width as needed */
+  border-radius: 90px;
+  border: none; /* Specify the border style */
+  background-color: #f2e4c3;
   }
-    @media (max-width: 500px) {
+.header-img{
+  width:30vw;
+  height: auto;
+  }
+  @media (max-width: 1900px) {
+    .header-img{
+      width:40vw;
+      height: auto;
+    }
+      .list-unstyled{
+      font-size: 2vw;
+      
+    }
+  }
+  
+  @media (max-width: 500px) {
   /* Center the cards horizontally */
   .card {
     margin: 0 auto;
@@ -119,7 +148,7 @@
     margin-right: 50vw;
   }
   body{
-    background-image: url(/img/BSA-BK3\(Larger\).png);
+    background-image: url("img/BSA-BK3\(Larger\).png");
   }
   .footer{margin-top: -90px;
   }
@@ -169,26 +198,27 @@
                 <h1 class="MainTitle">Wellcome To The Wonderful <br> World of Cub Scouts With <br> Pack 253!!</h1>
             </div>
         </div>
-        <div class="row mt-5 " style="width: 100vw;">
-            <div class="col-md-8 placeholder header-img" >
-            
+        <div class="row mt-5 " >
+            <div class="col-md-6  header-img" >
+              <img src="/img/img1.jpg" class="img-fluid" alt="Image">
+
             </div>
-            <div class="col-md-4 justify-content-center">
-                <ul class="list-unstyled">
-                    <li><strong>Pack 253 At a Glance</strong></li>
-                    <li><strong>Meeting Place:</strong> Watts Chapel Baptist Church</li>
+            <div class="col-md-6 justify-content-center">
+                <ul class="list-unstyled" >
+                    <li><strong style="color: var(--colorSecond)">Pack 253 At a Glance</strong></li>
+                    <li><strong style="color: var(--colorSecond)">Meeting Place:</strong> Watts Chapel Baptist Church</li>
                     <li>3703 Tryon Road</li>
                     <li>Raleigh, NC 27606</li>
-                    <li><strong>Meeting Times:</strong> Second and Fourth Mondays 7:00pm</li>
-                    <li><strong>Sponsor:</strong> Watts Chapel Baptist Church</li>
-                    <li><strong>District:</strong> Black River</li>
-                    <li><strong>Council:</strong> Occoneechee</li>
+                    <li><strong style="color: var(--colorSecond)">Meeting Times:</strong> Second and Fourth Mondays 7:00pm</li>
+                    <li><strong style="color: var(--colorSecond)">Sponsor:</strong> Watts Chapel Baptist Church</li>
+                    <li><strong style="color: var(--colorSecond)">District:</strong> Black River</li>
+                    <li><strong style="color: var(--colorSecond)">Council:</strong> Occoneechee</li>
                 </ul>
             </div>
         </div>
   </div>
 </section>
-  <section class="WhatisScout" style="margin-bottom: 20vw;">
+  <section class="WhatisScout" style="margin-bottom: 20vw;   color: var(--colormain);  ">
     <div class="container">
       <div class="row">
           <div class="col-md-6 d-flex align-items-center justify-content-center">
@@ -199,14 +229,14 @@
                  most important are the weekly den meetings and the monthly pack meetings.
               </p>
           </div>
-          <div class="col-md-6 placeholder"   >
-              <img src="your_image_url" class="img-fluid" alt="Image">
+          <div class="col-md-6 imgHolder"   >
+              <img src="/img/img1.jpg" class="img-fluid" alt="Image">
           </div>
       </div>
       <div class="row mt-4">
         <div class="col-md-6 placeholder" >
-          <img src="your_image_url" class="img-fluid" alt="Image">
-      </div>
+          <img src="/img/img1.jpg" class="img-fluid" alt="Image">
+        </div>
           <div class="col-md-6 d-flex align-items-center justify-content-center">
               <p>Apart from the fun and excitement of Cub Scout activities, 
                 the Cub Scout Promise, the Law of the Pack, and the Cub Scout 
@@ -222,7 +252,7 @@
                 the pride and satisfaction in their achievements. </p>
           </div>
           <div class="col-md-6 placeholder" >
-              <img src="your_image_url" class="img-fluid" alt="Image">
+            <img src="/img/img1.jpg" class="img-fluid" alt="Image">
           </div>
       </div>
   </div>
@@ -268,7 +298,7 @@
         </div>
         <div class="col-md-4">
             <div class="card placeholder align-items-center justify-content-center" >
-                <img src="your_image_url" class="img-fluid" alt="Image">
+              <img src="/img/img1.jpg" class="img-fluid" alt="Image">
             </div>
         </div>
         <div class="col-md-4">

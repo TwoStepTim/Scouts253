@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
   --color: #333;
+  --colormain: #4e7e3e;
+  --colorSecond: #82641c;
+
 }
 
 body {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   color: var(--color);
-  background-image: url("img/BSA-BK.png");
+  background-image: url("/img/BSA-BK.png");
 }
 
 .container {
   text-align: center;
   padding: 20px;
+  
 }
 
 
@@ -143,7 +147,10 @@ color: black;
 float: right;
 }
 
-
+.MainTitle{
+  font-size: 5vw;
+  color: var(--colorSecond);
+}
 .card {
   border-radius: 30px;
 }
@@ -171,49 +178,8 @@ footer{
   margin-right: 50px;
 }
 
-.Flexcontainer img{
-  width: 25vh;
-}
-.Flexcontainer{
-  display: flex;
-  justify-content: center; /* Distribute space between cards */
-  padding: 3% 5%; /* Add padding to the sides of the section */
-  background-color: #333;
 
-}
-.FlexLocation{
-  text-align: center;
-  margin-top: 7vh; /* Add space above the location */
-  margin-bottom: 20px; /* Add space below the location */
 
-}
-.FlexLocation h1{
-  font-size: 8vh;
-}
-.FlexLocation h3{
-  width: 35vw;
-}
-.footer-center {
-  align-items: center; /* Align items vertically */
-  margin-top: 4vh;
-}
-.footer-center a{
-  font-size: 20px;
-
-}
-.footer-center div {
-  display: flex; /* Make divs flex containers */
-  align-items: center; /* Align items vertically */
-  margin-right: 0px;
-
-}
-
-.footer-center i {
-  margin-right: -60px;
-  font-size: 3vh;
-  
-  
-}
 
 @media screen and (max-width: 480px) {
  
@@ -225,37 +191,7 @@ footer{
   }
  
 
-.Flexcontainer{
-  flex-direction: column; /* Change to column on smaller screens */
-  align-items: center;
-}
-.FlexLocation{
-  align-items:center ;
-  margin-bottom: 0px; 
 
-}
-.FlexLocation h1{
-  font-size: 6.1vh;
-}
-.FlexLocation h3{
-  width: 80vw;
-  margin-left: 20px;
-}
-.footer-center{
-  margin-left: 10vh;
-}
-.footer-center a{
-  font-size: 3vh;
-}
-.footer-center i {
-  font-size: 2vh;
-}
-.footer-center i {
-  margin-right: -20px;
-  font-size: 3vh;
-  
-  
-}
 }
 @media (max-width: 768px) {
   /* Adjustments for tablets and smaller screens */
@@ -290,4 +226,7 @@ footer{
   h3 {
     font-size: 1.2rem;
   }
+  
 }
+
+
