@@ -10,7 +10,11 @@ body {
   
 }
 
- 
+footer{
+  width: 100vw;
+  overflow-x: hidden;
+  margin-right: 50px;
+}
 
 
 .navbar_moblie{
