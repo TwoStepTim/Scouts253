@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troop 253 Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="img/BSA-EM.png">
+  <link rel="stylesheet" href="styles/style1.css">
+  <link rel="stylesheet" href="styles/nav.css">
+
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'ycr5cni',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap">
+  <style>
+    .card {
+      border-radius: 90px;
+      border: 20px solid #efd08b; /* Specify the border style */
+      background-color: #f2e4c3;
+      
+    }
+    body{
+      color: var(--colorSecond);
+
+    }
+    .card-custom2{
+      border-radius: 90px;
+      border: 20px solid #fbdb8f; /* Specify the border style */
+      background-color: #f2e4c3;
+
+    }
+    .card-body {
+      color: var(--colorSecond);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .position-img {
+      border-radius: 30%;
+      width: 15vw;
+      height: auto;
+      object-fit: cover;
+      color: #f2e4c3;
+    }
+
+    .position-title,
+    .person-name {
+      text-align: center;
+      color: var(--colorSecond);
+
+    }
+    button{
+      border-radius: 60px;
+      background-color: #fbdb8f;
+      border: none;
+      width: 25vw;
+      height: 15vw;
+      margin-top: 30px;
+      color: var(--colorSecond);
+
+    }
+    .li{
+      font-size: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
+    <nav class="navbar_moblie" id="myNavbar">
+        <ul>
+            <li><a href="index.html" class="nav-link " style="margin-top: 50px;">Home</a></li>
+            <li><a href="TroopLeadership.html" class="nav-link">Troop Leadership</a></li>
+            <li><a href="#work" class="nav-link">Calendar</a></li>
+            <li><a href="#work" class="nav-link">Gallery</a></li>
+            <li><a href="CubScoutsAct.html" class="nav-link"> Pack Activities</a></li>
+            <li><a href="CubScouts.html" class="nav-link">Cub Scouts</a></li>
+            <!-- Dropdown for Boy Scouts -->
+            <li class="dropdown dropdown-sidebar">
+                <a href="#" class="dropbtn-sidebar">Boy Scouts</a>
+                <div class="dropdown-content">
+                    <a href="Troop1.html">Boys Scouts</a>
+                    <a href="TroopLeadership.html">Troop Leadership</a>
+                    <a href="#about">Calendar</a>
+                    <a href="#search">Gallery</a>
+                </div>
+            </li>
+        </ul>
+        <p>2023. Created with passion by Circuit Tech Solutions LLC. All rights reserved.</p>
+    </nav>
+</div>
+
+<div class="topnav">
+    <a href="index.html"><img src="img/BSA-EM.png" alt=""></a>
+    <div class="topnav-right">
+        <a href="CubScouts.html">Cub Scouts</a>
+        <a href="PackLeadership.html">Pack Leadership</a>
+        <a href="PackActivies.html" class="nav-link">Pack Activies</a>
+        <a href="#about">Calendar</a>
+        <a href="#search">Gallery</a>
+        <div class="dropdown">
+            <button class="dropbtn">Boy Scouts</button>
+            <div class="dropdown-content">
+              <a href="Troop1.html">Boys Scouts</a>
+              <a href="TroopLeadership.html">Troop Leadership</a>
+              <a href="#about">Calendar</a>
+              <a href="#search">Gallery</a>
+  
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="container">
+    <section class="header">
+      <h1 class="MainTitle" style="margin-top: 5vh; margin-bottom: 5vw;">LeaderShip</h1>
+    </section>
+    <section class="Leaders">
+      <!-- For desktop and larger screens -->
+
+      <!-- James Swinson -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Cubmaster</h5>
+              <img class="position-img" src="/HeadshotBSA/JamesSwinson.jpg" alt="Position Image">
+              <p class="person-name">James Swinson </p>
+            </div>
+            <div class="col">
+                <p style="font-size: 14px;">He is from the big city of Mount Olive, NC. After his graduation from Southern Wayne High School, Mr.
+                    Swinson joined the U.S. Marine Corps., in which he served 8 years. While in the armed forces, Mr.
+                    Swinson earned his Bachelor of Science degree in Criminal Justice from The North Carolina Central
+                    University. While attending the great university he was chosen to join the best fraternity in existence,
+                    through The Mighty Tau Psi Chapter of Omega Psi Phi Fraternity Inc. He crossed those burning sands in
+                    the Fall of 2005. As an undergraduate, he held several positions in the fraternity, one being the
+                    Undergraduate Representative to the Supreme Council in which is a national elected position. After
+                    graduation, his degree landed him a job with the Department of Public Safety as a Youth Counselor for a
+                    Youth Development Center. Through growth and advancements in life Mr. Swinson took his talents to
+                    the insurance industry. He is currently employed with a fortune 50 insurance company and has been the
+                    past 10 years, receiving numerous awards and recognition. Mr. Swinson, also had the opportunity to
+                    come back to NCCU to volunteer with Career services helping students with a Resume Workshop. While
+                    working for this company Mr. Swinson was able to obtain his Masters degree in Management and
+                    Leadership from Walden University. Mr. Swinson is the Founder/CEO of the non-profit organization,
+                    Leaders with Integrity and Values, Inc in the mission is to create a positive and engaging environment
+                    designed to foster positive leadership and social skills. Our program is centered around exposure, we
+                    believe the more the youth is exposed to positive engaging activities the more successful the outcome.
+                    He serves as Cubmaster for Pack 253 Cub scouts of Watts Chapel Missionary Baptist and has done so for
+                    a few years and for years to come. This is an opportunity to work with youth ages 6-10, getting them
+                    prepared for Boys Scouts. As some may know it is very difficult to reach the rank of Eagle Scout and it is
+                    my mission to prepare all my boys to make this goal obtainable. He has two young handsome Ques in
+                    the making. He is currently coaching basketball with I9 Sports picking up where he left off from coaching
+                    with John Avery Boys and Girls Club. He currently serves in hid graduate chapter as Reclamation and
+                    Retention Chair for the Xi Mu Mu Chapter of Omega Psi Phi Fraternity, Inc. He is also a Life Member of
+                    Omega Psi Phi Fraternity, Inc. He lives by his personal motto “Service Over Self”.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Steven Brake -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Assistant Cubmaster and AOL/Webelos den leader</h5>
+              <img class="position-img" style="  image-rendering: high-quality;" src="/HeadshotBSA/StevenBrake.png" alt="Position Image">
+              <p class="person-name"> Steven Brake</p>
+            </div>
+            <div class="col-6">
+              <p>Rocky Mount, NC native. Dedicated last eight years traveling 13 states teaching development and spiriting leadership. Becoming a den leader to the cub scouts has given me a new insight on how I can impact the youth and their future. These past two years has been fun, adventurous, and an eye opener helping them gain lifestyles they can take with them forever! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Amneste Bynum-Brake -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title"> Den leader for the Lions and Tigers</h5>
+              <img class="position-img" src="/HeadshotBSA/AmnesteBynum-Brake.PNG" alt="Position Image">
+              <p class="person-name"> Amneste Bynum-Brake</p>
+            </div>
+            <div class="col-6">
+                <p>Hello. My name is Amneste Bynum-Brake. I am the Den leader for the Lions and Tigers. I have been a leader for 3 years and have enjoyed the program this far. My passion is to teach the boys the basics of Cub scouting so that when they advance to a higher rank, they have a full understanding of what it means to be a Cub Scout.                 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- For mobile devices -->
+
+      <!-- James Swinson -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center" >
+        <div class="card p-4" style=" width: 90%;">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">James Swinson</p>
+              <p class="position-title" style="font-size: 3vw;">Cubmaster</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 50vw; margin-bottom:0px ;" src="/HeadshotBSA/JamesSwinson.jpg" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton1" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Steven Brake -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center" >
+        <div class="card p-4" style=" width: 90%;">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Steven Brake</p>
+              <p class="position-title" style="font-size: 3vw;">Assistant Cubmaster and AOL/Webelos den leader</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ; image-rendering: high-quality;" src="/HeadshotBSA/StevenBrake.png" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton2" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Amneste Bynum-Brake -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center" >
+        <div class="card p-4" style=" width: 90%; ">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Amneste Bynum-Brake</p>
+              <p class="position-title" style="font-size: 3vw;">Den leader for the Lions and Tigers</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/AmnesteBynum-Brake.PNG" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton3" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      
+
+      <!-- Bio Pop-up -->
+      <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bioModalLabel">Bio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p id="bioContent"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  </div>
+  <footer class="bg-dark text-light" >
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-2 text-center">
+                <img src="img/BSA-EM.png" alt="BSA Logo" class="img-fluid">
+            </div>
+            <div class="col-md-4 text-center">
+                <h1 class="mb-4">Scouts of 253</h1>
+                <h3>Watts Chapel Baptist Church, 3703 Трион-роуд, Raleigh, NC 27606</h3>
+                
+            </div>
+            
+            <div class="col-md-4 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-6 col-md-auto mb-3 mb-md-0">
+                        <i class="fa fa-phone"></i>
+                        <p><a href="tel:+19802887801">(980) 288-7801</a></p>
+                    </div>
+                    <div class="col-6 col-md-auto">
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:BSA@GMAIL.COM">BSA@GMAIL.COM</a></p>
+                    </div>
+                </div>
+                <p>
+                  2024. Created with passion by Circuit Tech Solutions LLC. 
+                 All rights reserved.
+             </p>
+            </div>
+        </div>
+        
+    </div>
+      </footer>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // James Swinson
+            document.getElementById('bioButton1').addEventListener('click', function() {
+            showBio('James Swinson', 'James Swinson is from the big city of Mount Olive, NC. After his graduation from Southern Wayne High School, Mr. Swinson joined the U.S. Marine Corps., in which he served 8 years. While in the armed forces, Mr. Swinson earned his Bachelor of Science degree in Criminal Justice from The North Carolina Central University. While attending the great university he was chosen to join the best fraternity in existence, through The Mighty Tau Psi Chapter of Omega Psi Phi Fraternity Inc. He crossed those burning sands in the Fall of 2005. As an undergraduate, he held several positions in the fraternity, one being the Undergraduate Representative to the Supreme Council in which is a national elected position. After graduation, his degree landed him a job with the Department of Public Safety as a Youth Counselor for a Youth Development Center. Through growth and advancements in life Mr. Swinson took his talents to the insurance industry. He is currently employed with a fortune 50 insurance company and has been the past 10 years, receiving numerous awards and recognition. Mr. Swinson, also had the opportunity to come back to NCCU to volunteer with Career services helping students with a Resume Workshop. While working for this company Mr. Swinson was able to obtain his Masters degree in Management and Leadership from Walden University. Mr. Swinson is the Founder/CEO of the non-profit organization, Leaders with Integrity and Values, Inc in the mission is to create a positive and engaging environment designed to foster positive leadership and social skills. Our program is centered around exposure, we believe the more the youth is exposed to positive engaging activities the more successful the outcome. He serves as Cubmaster for Pack 253 Cub scouts of Watts Chapel Missionary Baptist and has done so for a few years and for years to come. This is an opportunity to work with youth ages 6-10, getting them prepared for Boys Scouts. As some may know it is very difficult to reach the rank of Eagle Scout and it is my mission to prepare all my boys to make this goal obtainable. He has two young handsome Ques in the making. He is currently coaching basketball with I9 Sports picking up where he left off from coaching with John Avery Boys and Girls Club. He currently serves in hid graduate chapter as Reclamation and Retention Chair for the Xi Mu Mu Chapter of Omega Psi Phi Fraternity, Inc. He is also a Life Member of Omega Psi Phi Fraternity, Inc. He lives by his personal motto “Service Over Self”.', []);
+            });
+
+            // Steven Brake
+            document.getElementById('bioButton2').addEventListener('click', function() {
+            showBio('Steven Brake', 'Rocky Mount, NC native. Dedicated last eight years traveling 13 states teaching development and spiriting leadership. Becoming a den leader to the cub scouts has given me a new insight on how I can impact the youth and their future. These past two years has been fun, adventurous, and an eye opener helping them gain lifestyles they can take with them forever!', []);
+            });
+
+            // Amneste Bynum-Brake
+            document.getElementById('bioButton3').addEventListener('click', function() {
+            showBio('Amneste Bynum-Brake', 'Hello. My name is Amneste Bynum-Brake. I am the Den leader for the Lions and Tigers. I have been a leader for 3 years and have enjoyed the program this far. My passion is to teach the boys the basics of Cub scouting so that when they advance to a higher rank, they have a full understanding of what it means to be a Cub Scout.', []);
+            });
+            
+          
+      
+          // Function to show bio content
+          function showBio(name, bio, listItems) {
+            // Construct the bio content
+            var bioContent = '<p><strong>' + name + '</strong></p>';
+            bioContent += '<p>' + bio + '</p>';
+            bioContent += '<ul>';
+            listItems.forEach(function(item) {
+              bioContent += '<li>' + item + '</li>';
+            });
+            bioContent += '</ul>';
+      
+            // Update the bio pop-up content
+            document.getElementById('bioContent').innerHTML = bioContent;
+            
+            // Show the bio pop-up
+            var bioModal = new bootstrap.Modal(document.getElementById('bioModal'));
+            bioModal.show();
+          }
+        });
+      </script>
+      
+<script src="styles/script.js"></script>
+</body>
+
+</html>

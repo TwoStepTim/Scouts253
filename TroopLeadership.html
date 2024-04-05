@@ -6,17 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Troop 253 Website</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  <!-- Custom CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-GLhlTQ8iK9tGRWYWSKxVEJtPjMqq9/6Z/hRTt8+pjUddI2XmK1Gme/EI0M5wF5J" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="img/BSA-EM.png">
+  <script src="https://kit.fontawesome.com/377f518282.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="img/BSA-EM.png">
   <link rel="stylesheet" href="styles/style1.css">
+  <link rel="stylesheet" href="styles/nav.css">
 
+
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'ycr5cni',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap">
   <style>
@@ -24,8 +32,19 @@
       border-radius: 90px;
       border: 20px solid #efd08b; /* Specify the border style */
       background-color: #f2e4c3;
+      position: static;
     }
+    body{
+      color: var(--colorSecond);
+      background-attachment: fixed;
 
+    }
+    .card-custom2{
+      border-radius: 90px;
+      border: 20px solid #fbdb8f; /* Specify the border style */
+      background-color: #f2e4c3;
+
+    }
     .card-body {
       color: var(--colorSecond);
 
@@ -40,12 +59,14 @@
       width: 15vw;
       height: auto;
       object-fit: cover;
-    color: #f2e4c3;
+      color: #f2e4c3;
     }
 
     .position-title,
     .person-name {
       text-align: center;
+      color: var(--colorSecond);
+
     }
     button{
       border-radius: 60px;
@@ -54,7 +75,13 @@
       width: 25vw;
       height: 15vw;
       margin-top: 30px;
+      color: var(--colorSecond);
+
     }
+    .li{
+      font-size: 10px;
+    }
+    
   </style>
 </head>
 
@@ -79,16 +106,24 @@
     </nav>
 </div>
 <div class="topnav">
-    <a href="index.html"><img src="img/BSA-EM.png" alt=""></a>
-    <div class="topnav-right">
+  <a href="index.html"><img src="img/BSA-EM.png" alt=""></a>
+  <div class="topnav-right">
+      <a href="Troop1.html">Boys Scouts</a>
       <a href="TroopLeadership.html">Troop Leadership</a>
       <a href="#about">Calendar</a>
       <a href="#search">Gallery</a>
-      <a href="CubScoutsAct.html"> Pack Activities</a>
-      <a href="CubScouts.html">Cub Scouts</a>
-      <a href="Troop1.html">Boys Scouts</a>
-    </div>
+      <div class="dropdown">
+          <button class="dropbtn">Cub Scouts</button>
+          <div class="dropdown-content">
+              <a href="CubScouts.html">Cub Scouts</a>
+              <a href="PackLeadership.html">Pack Leadership</a>
+              <a href="PackActivies.html" class="nav-link">Pack Activies</a>>
+              <a href="#about">Calendar</a>
+              <a href="#search">Gallery</a>
+          </div>
+      </div>
   </div>
+</div>
   <div class="container">
     <section class="header">
       <h1 class="MainTitle" style="margin-top: 5vh; margin-bottom: 5vw;">LeaderShip</h1>
@@ -109,10 +144,167 @@
           </div>
         </div>
       </div>
+      <!-- Jonathan Winstead-->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Assistant Scoutmaster</h5>
+              <img class="position-img" src="/HeadshotBSA/JonathanWinstead.jpg" alt="Position Image">
+              <p class="person-name">Jonathan Winstead</p>
+            </div>
+            <div class="col-6">
+              <p>Jonathan Winstead has been involved with scouting for several years. He has served as a parent coordinator for Cub Pack 253 when his son Jonathan was progressing through the Webelos and Arrow Of Light ranks. He is now serving as an Assistant Scoutmaster for Troop 253 where his son is actively involved as a Life Scout. He has completed several advanced Boy Scout leader training courses, the most notable being “Woodbadge” during the 100 year celebration, S7-421-19-1 as a "Buffalo". Jonathan is active as a Science, Technology, Engineering, and Math tutor and mentor. He has been involved with numerous volunteer organizations such as Habitat For Humanity, Brown Bag Ministry, and Toys for Tots to name a few. Jonathan is to proud to support the next generation of leaders by teaching and exhibiting the Scouting Oath and Law</p>
+            </div>
+            <div class="col-2">
+              <ul style=" font-size: 10px;">
+                <li>Youth Protection Training Certification</li>
+                <li>Introduction to Outdoor Leadership Skills (IOLS)</li>
+                <li>Aims and Methods of Scouts BSA</li>
+                <li>Ideals and Beliefs of Scouts BSA</li>
+                <li>Introduction to Merit Badges</li>
+                <li>Merit Badge Counselors for Boy Scouting</li>
+                <li>Troop Meeting for Scouts BSA</li>
+                <li>Troop Committee Meetings for Scouts BSA</li>
+                <li>Advancement for Scouts BSA</li>
+                <li>Roles of Scoutmaster and SPL for Scouts BSA</li>
+                <li>Role of the Unit Key 3 for Scouts BSA</li>
+                <li>BALOO Introduction Course</li>
+                <li>Outdoor Ethics for Scouts BSA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Robert C Herbert Jr -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Assistant Scoutmaster</h5>
+              <img class="position-img" src="/HeadshotBSA/RobertCHerbertJr.JPG" alt="Position Image">
+              <p class="person-name">Robert C Herbert Jr</p>
+            </div>
+            <div class="col-6">
+              <p>Jonathan Winstead has been involved with scouting for several years. He has served as a parent coordinator for Cub Pack 253 when his son Jonathan was progressing through the Webelos and Arrow Of Light ranks. He is now serving as an Assistant Scoutmaster for Troop 253 where his son is actively involved as a Life Scout. He has completed several advanced Boy Scout leader training courses, the most notable being “Woodbadge” during the 100 year celebration, S7-421-19-1 as a "Buffalo". Jonathan is active as a Science, Technology, Engineering, and Math tutor and mentor. He has been involved with numerous volunteer organizations such as Habitat For Humanity, Brown Bag Ministry, and Toys for Tots to name a few. Jonathan is to proud to support the next generation of leaders by teaching and exhibiting the Scouting Oath and Law</p>
+            </div>
+            <div class="col-2">
+              <ul style=" font-size: 10px;">
+                <li>Youth Protection Training</li>
+                <li>Roles of Scoutmaster and SPL for Scouts BSA</li>
+                <li>Wood Badge</li>
+                <li>Leave No Trace Trainer </li>
+                <li>Outdoor Leadership</li>
+                <li>Scoutmaster Fundamentals</li>
+                <li>Outdoor Ethics for Scouts BSA</li>
+                <li>BALOO Intro Trng</li>
+                <li>Intro to Cub Scout Outdoor Training</li>
+                <li>Hazardous Weather Training</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Shawn E. Shearin -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Assistant Scoutmaster</h5>
+              <img class="position-img" src="/HeadshotBSA/SESHeadshot.png" alt="Position Image">
+              <p class="person-name">Shawn E. Shearin</p>
+            </div>
+            <div class="col-6">
+              <p> A native of Richmond Virginia, Shawn was introduced to scouting by his parents as a fun and unique activity to give him exposure to all that Scouting had to offer. Fast forward  years later and Pack 253 / Troop 253 would offer his own sons access to that same amazing world. 
+                First as a Pack Parent, then a Dean Leader, Assistant Cubmaster to now an Assistant Scoutmaster, he’s witnessed over his almost decade career as an Adult Leader the positive effect that Scouting, but in particular the entire  “Village of 253” - every volunteer & adult leader, has had on countless young people that have come through the program
+             </p>
+            </div>
+            <div class="col-2">
+              <ul style=" font-size: 10px;">
+                <li>Youth Protection Training Certification</li>
+                <li>BALOO Introduction Course</li>
+                <li>Outdoor Ethics</li>
+                <li>Hazardous Weather Training</li>
+                <li>Journey to Excellence</li>
+                <li>Annual Troop Program Planning</li>
+                <li>Introduction to Merit Badges</li>
+                <li>Aims and Methods of Scouts BSA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Masceo DesChamps -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card card-custom2" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Life-to-Eagle Coordinator; Committee Member, Eagle Coach</h5>
+              <img class="position-img" src="/HeadshotBSA/MasceoDesChamps.png" alt="Position Image">
+              <p class="person-name">Masceo DesChamps</p>
+            </div>
+            <div class="col-6">
+              <p> A native of Richmond Virginia, Shawn was introduced to scouting by his parents as a fun and unique activity to give him exposure to all that Scouting had to offer. Fast forward  years later and Pack 253 / Troop 253 would offer his own sons access to that same amazing world. 
+                First as a Pack Parent, then a Dean Leader, Assistant Cubmaster to now an Assistant Scoutmaster, he’s witnessed over his almost decade career as an Adult Leader the positive effect that Scouting, but in particular the entire  “Village of 253” - every volunteer & adult leader, has had on countless young people that have come through the program
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Allen Akins  -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card card-custom2" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Troop Committee Member</h5>
+              <img class="position-img" src="/HeadshotBSA/AllenAkins.jpg" alt="Position Image">
+              <p class="person-name">Allen Akins </p>
+            </div>
+            <div class="col-6">
+              <ul >
+                <li>Youth Protection Training Certification</li>
+                <li>BALOO Introduction Course</li>
+                <li>Outdoor Ethics</li>
+                <li>Hazardous Weather Training</li>
+                <li>Journey to Excellence</li>
+                <li>Annual Troop Program Planning</li>
+                <li>Introduction to Merit Badges</li>
+                <li>Aims and Methods of Scouts BSA</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chris Nelson -->
+      <div class="container d-none d-md-flex justify-content-center align-items-center">
+        <div class="card card-custom2" style="width: 100vw;">
+          <div class="card-body">
+            <div class="col-4">
+              <h5 class="position-title">Troop 253 Committee Chair</h5>
+              <img class="position-img" src="/HeadshotBSA/ChrisNelson.jpg" alt="Position Image">
+              <p class="person-name">Chris Nelson</p>
+            </div>
+            <div class="col-4">
+              <p>Adult Scouter serving for over a decade with both Troop and Pack 253 in multiple leadership roles.</p>
+            </div>
+            <div class="col-4">
+              <ul>
+                <li>Youth Protection Training</li>
+                <li>Wood Badge Recipient</li>
+                <li>IOLS Trained</li>
+                <li>Training/Trainer</li>
+                <li>Journey to Excellence Trained</li>
+                <li>Hazardous Weather Trained</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <!-- For mobile devices -->
-      <div class="container d-flex d-md-none justify-content-center align-items-center" style="height: 100vh;">
-        <div class="card p-4" style=" width: 90%; height: 90vh;">
+      <div class="container d-flex d-md-none justify-content-center align-items-center">
+        <div class="card p-4" style=" width: 90%; ">
           <div class="row">
             <div class="col">
               <p class="person-name" style="font-size: 5vw; margin-top:60px">Person 1 Name</p>
@@ -127,9 +319,109 @@
           </div>
         </div>
       </div>
+      <!-- Jonathan Winstead -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center" >
+        <div class="card p-4" style=" width: 90%; ">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Jonathan Winstead</p>
+              <p class="position-title" style="font-size: 3vw;">Assistant Scoutmaster</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/JonathanWinstead.jpg" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton2" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Robert C Herbert Jr -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center">
+        <div class="card p-4" style=" width: 90%;">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Robert C Herbert Jr</p>
+              <p class="position-title" style="font-size: 3vw;">Assistant Scoutmaster</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/RobertCHerbertJr.JPG" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton3" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Shawn E. Shearin -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center">
+        <div class="card p-4" style=" width: 90%; ">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Shawn E. Shearin</p>
+              <p class="position-title" style="font-size: 3vw;">Assistant Scoutmaster</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/SESHeadshot.png" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton4" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Masceo DesChamps -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center">
+        <div class="card card-custom2 p-4" style=" width: 90%; ">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Masceo DesChamps</p>
+              <p class="position-title" style="font-size: 3vw;">Life-to-Eagle Coordinator; Committee Member, Eagle Coach</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/MasceoDesChamps.png" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton5" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Allen Akins -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center" >
+        <div class="card card-custom2 p-4" style=" width: 90%; ">
+          <div class="row">
+            <div class="col">
+              <p class="person-name" style="font-size: 5vw; margin-top:60px">Allen Akins</p>
+              <p class="position-title" style="font-size: 3vw;">Troop 253 Committee Member</p>
+            </div>
+            <div class="col-12 col-md-auto text-center">
+              <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/AllenAkins.jpg" alt="Position Image">
+            </div>
+            <div class="col text-center">
+              <button id="bioButton1" >Bio</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Chris Nelson -->
+      <div class="container d-flex d-md-none justify-content-center align-items-center">
+      <div class="card card-custom2 p-4" style=" width: 90%; ">
+        <div class="row">
+          <div class="col">
+            <p class="person-name" style="font-size: 5vw; margin-top:60px">Chris Nelson</p>
+            <p class="position-title" style="font-size: 3vw;">Troop 253 Committee Chair</p>
+          </div>
+          <div class="col-12 col-md-auto text-center">
+            <img class="position-img"style="width: 47vw; margin-bottom:0px ;" src="/HeadshotBSA/ChrisNelson.jpg" alt="Position Image">
+          </div>
+          <div class="col text-center">
+            <button id="bioButton1" >Bio</button>
+          </div>
+        </div>
+      </div>
+      </div>
       
-
-
 
       <!-- Bio Pop-up -->
       <div class="modal fade" id="bioModal" tabindex="-1" aria-labelledby="bioModalLabel" aria-hidden="true">
@@ -145,9 +437,9 @@
           </div>
         </div>
       </div>
-  
+  </section>
   </div>
-      <footer class="bg-dark text-light">
+  <footer class="bg-dark text-light" >
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-2 text-center">
@@ -156,7 +448,9 @@
             <div class="col-md-4 text-center">
                 <h1 class="mb-4">Scouts of 253</h1>
                 <h3>Watts Chapel Baptist Church, 3703 Трион-роуд, Raleigh, NC 27606</h3>
+                
             </div>
+            
             <div class="col-md-4 text-center">
                 <div class="row justify-content-center">
                     <div class="col-6 col-md-auto mb-3 mb-md-0">
@@ -168,31 +462,69 @@
                         <p><a href="mailto:BSA@GMAIL.COM">BSA@GMAIL.COM</a></p>
                     </div>
                 </div>
+                <p>
+                  2024. Created with passion by Circuit Tech Solutions LLC. 
+                 All rights reserved.
+             </p>
             </div>
         </div>
+        
     </div>
       </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    // Add click event listeners to the bio buttons
-    document.getElementById('bioButton1').addEventListener('click', function() {
-      showBio('Bio content for Person 1');
-    });
-
-    // Add similar event listeners for other people's buttons
-  });
-
-  function showBio(bioContent) {
-    // Update the bio pop-up content
-    document.getElementById('bioContent').textContent = bioContent;
-    
-    // Show the bio pop-up
-    var bioModal = new bootstrap.Modal(document.getElementById('bioModal'));
-    bioModal.show();
-  }
-  </script>
-
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          // Chris Nelson
+          document.getElementById('bioButton1').addEventListener('click', function() {
+            showBio('Chris Nelson', 'Adult Scouter serving for over a decade with both Troop and Pack 253 in multiple leadership roles.', ['Youth Protection Training', 'Wood Badge Recipient', 'IOLS Trained', 'Training/Trainer', 'Journey to Excellence Trained', 'Hazardous Weather Trained']);
+          });
+      
+          // Jonathan Winstead
+          document.getElementById('bioButton2').addEventListener('click', function() {
+            showBio('Jonathan Winstead', 'Jonathan Winstead has been involved with scouting for several years. He has served as a parent coordinator for Cub Pack 253 when his son Jonathan was progressing through the Webelos and Arrow Of Light ranks. He is now serving as an Assistant Scoutmaster for Troop 253 where his son is actively involved as a Life Scout. He has completed several advanced Boy Scout leader training courses, the most notable being “Woodbadge” during the 100 year celebration, S7-421-19-1 as a "Buffalo". Jonathan is active as a Science, Technology, Engineering, and Math tutor and mentor. He has been involved with numerous volunteer organizations such as Habitat For Humanity, Brown Bag Ministry, and Toys for Tots to name a few. Jonathan is to proud to support the next generation of leaders by teaching and exhibiting the Scouting Oath and Law.', ['Youth Protection Training Certification', 'Introduction to Outdoor Leadership Skills (IOLS)', 'Aims and Methods of Scouts BSA', 'Ideals and Beliefs of Scouts BSA', 'Introduction to Merit Badges', 'Merit Badge Counselors for Boy Scouting', 'Troop Meeting for Scouts BSA', 'Troop Committee Meetings for Scouts BSA', 'Advancement for Scouts BSA', 'Roles of Scoutmaster and SPL for Scouts BSA', 'Role of the Unit Key 3 for Scouts BSA', 'BALOO Introduction Course', 'Outdoor Ethics for Scouts BSA']);
+          });
+      
+          // Robert C Herbert Jr
+          document.getElementById('bioButton3').addEventListener('click', function() {
+            showBio('Robert C Herbert Jr', 'Robert C Herbert Jr has been involved with scouting for several years. He has served as a parent coordinator for Cub Pack 253 when his son Jonathan was progressing through the Webelos and Arrow Of Light ranks. He is now serving as an Assistant Scoutmaster for Troop 253 where his son is actively involved as a Life Scout. He has completed several advanced Boy Scout leader training courses, the most notable being “Woodbadge” during the 100 year celebration, S7-421-19-1 as a "Buffalo". Robert is active as a Science, Technology, Engineering, and Math tutor and mentor. He has been involved with numerous volunteer organizations such as Habitat For Humanity, Brown Bag Ministry, and Toys for Tots to name a few. Robert is to proud to support the next generation of leaders by teaching and exhibiting the Scouting Oath and Law.', ['Youth Protection Training', 'Roles of Scoutmaster and SPL for Scouts BSA', 'Wood Badge', 'Leave No Trace Trainer', 'Outdoor Leadership', 'Scoutmaster Fundamentals', 'Outdoor Ethics for Scouts BSA', 'BALOO Intro Trng', 'Intro to Cub Scout Outdoor Training', 'Hazardous Weather Training']);
+          });
+      
+          // Shawn E. Shearin
+          document.getElementById('bioButton4').addEventListener('click', function() {
+            showBio('Shawn E. Shearin', 'A native of Richmond Virginia, Shawn was introduced to scouting by his parents as a fun and unique activity to give him exposure to all that Scouting had to offer. Fast forward years later and Pack 253 / Troop 253 would offer his own sons access to that same amazing world. First as a Pack Parent, then a Dean Leader, Assistant Cubmaster to now an Assistant Scoutmaster, he’s witnessed over his almost decade career as an Adult Leader the positive effect that Scouting, but in particular the entire “Village of 253” - every volunteer & adult leader, has had on countless young people that have come through the program.', ['Youth Protection Training Certification', 'BALOO Introduction Course', 'Outdoor Ethics', 'Hazardous Weather Training', 'Journey to Excellence', 'Annual Troop Program Planning', 'Introduction to Merit Badges', 'Aims and Methods of Scouts BSA']);
+          });
+      
+          // Masceo DesChamps
+          document.getElementById('bioButton5').addEventListener('click', function() {
+            showBio('Masceo DesChamps', 'A native of Richmond Virginia, Masceo was introduced to scouting by his parents as a fun and unique activity to give him exposure to all that Scouting had to offer. Fast forward years later and Pack 253 / Troop 253 would offer his own sons access to that same amazing world. First as a Pack Parent, then a Dean Leader, Assistant Cubmaster to now an Assistant Scoutmaster, he’s witnessed over his almost decade career as an Adult Leader the positive effect that Scouting, but in particular the entire “Village of 253” - every volunteer & adult leader, has had on countless young people that have come through the program.', ['Youth Protection Training Certification', 'BALOO Introduction Course', 'Outdoor Ethics', 'Hazardous Weather Training', 'Journey to Excellence', 'Annual Troop Program Planning', 'Introduction to Merit Badges', 'Aims and Methods of Scouts BSA']);
+          });
+      
+          // Allen Akins
+          document.getElementById('bioButton6').addEventListener('click', function() {
+            showBio('Allen Akins', 'Allen Akins has been serving as a Troop Committee Member for Troop 253. He has actively participated in various scouting activities and training programs.', ['Youth Protection Training Certification', 'BALOO Introduction Course', 'Outdoor Ethics', 'Hazardous Weather Training', 'Journey to Excellence', 'Annual Troop Program Planning', 'Introduction to Merit Badges', 'Aims and Methods of Scouts BSA']);
+          });
+      
+          // Function to show bio content
+          function showBio(name, bio, listItems) {
+            // Construct the bio content
+            var bioContent = '<p><strong>' + name + '</strong></p>';
+            bioContent += '<p>' + bio + '</p>';
+            bioContent += '<ul>';
+            listItems.forEach(function(item) {
+              bioContent += '<li>' + item + '</li>';
+            });
+            bioContent += '</ul>';
+      
+            // Update the bio pop-up content
+            document.getElementById('bioContent').innerHTML = bioContent;
+            
+            // Show the bio pop-up
+            var bioModal = new bootstrap.Modal(document.getElementById('bioModal'));
+            bioModal.show();
+          }
+        });
+      </script>
+      
 <script src="styles/script.js"></script>
 </body>
 

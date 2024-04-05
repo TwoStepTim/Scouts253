@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "peachy-keen-jf", sans-serif!important;
   overflow-x: hidden;
   
 }
@@ -17,124 +17,7 @@ footer{
 }
 
 
-.navbar_moblie{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    position: absolute;
-    top:0;
-    left: 0;
-    margin-left: 0vw;
-    margin-top: 0vw;
-    height: 100vh;
-    width: 70vw;
-    z-index: 100;
-    opacity: 0;
-    transform: translatex(-100%);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  
-  .animate {
-  animation: fadeInDown 0.5s ease-out; /* Add the animation */
-  }
-  
-  
-  @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  }
-  
-  .navbar_moblie ul {
-  list-style: none;
-  padding: 0;
-    padding-top: 50px;
-  
-  }
-  
-  .navbar_moblie li {
-  padding-bottom: 20px;
-    text-align:justify;
-  margin: 0 15px;
-  opacity: 100%;
-  }
-  
-  .navbar_moblie a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    transition: color 0.3s;
-    word-spacing: 10px;
-    font-size: 5vw;
-    opacity: 100%;
-      font-weight: 300;
-  }
-  .navbar_moblie p{
-    font-size: 3vw;
-   padding: 5px;
-  }
-  
-  .hamburger {
-    font-size: 24px;
-    display: none;
-    cursor: pointer;
-    margin-left: 20px;
-    position: absolute; /* Position the hamburger icon */
-    top: 10px; /* Adjust the top position as needed */
-    left: 20px; /* Adjust the left position as needed */
-    z-index: 101; /* Ensure the hamburger is above the navbar */
-  }
-  /* Add a style for when the checkbox is checked */
-  #sidebar-checkbox:checked + .navbar_moblie {
-    opacity: 1; /* Make it visible */
-    transform: translatex(0); /* Reset the transform to make it appear */
-  }
-  
-  /* Style for the navigation bar when checkbox is unchecked */
-  #sidebar-checkbox:not(:checked) + .navbar_moblie {
-    opacity: 0; /* Initially set opacity to 0 */
-    transform: translatex(-100%); /* Move the navbar up initially */
-    transition: opacity 0.5s, transform 0.5s; /* Add transitions for opacity and transform */
-  }
-  .topnav {
-    background-color: transparent;
-    overflow: hidden;
-    margin-right: 5vw;
-  }
-  
-  
-  .topnav a {
-    float: left;
-    background-color: transparent; 
-    color: #4e7e3e;
-    text-align: center;
-    margin-top: 3vh;
-    margin-left: 40px;
-    text-decoration: none;
-    font-size: 1.4vw;
-  
-  }
-  .topnav img{
-    width: 15vh;
-  }
-  
-  .topnav a:hover {
-    background-color: transparent;
-  color: black;
-  }
-  
-  
-  
-  .topnav-right {
-  float: right;
-  }
-  
-  
+
   h3 {
     font-weight: 700;
     font-size: 1.6rem;
@@ -292,55 +175,63 @@ footer{
     display: inline-block; /* Ensure cards are displayed inline */
   }
   
-  footer{
-    width: 100vw;
-    overflow-x: hidden;
-    margin-right: 50px;
-  }
-  
-  .Flexcontainer img{
-    width: 25vh;
-  }
-  .Flexcontainer{
-    display: flex;
-    justify-content: center; /* Distribute space between cards */
-    padding: 3% 5%; /* Add padding to the sides of the section */
-    background-color: #333;
-  
-  }
-  .FlexLocation{
-    text-align: center;
-    margin-top: 7vh; /* Add space above the location */
-    margin-bottom: 20px; /* Add space below the location */
-  
-  }
-  .FlexLocation h1{
-    font-size: 8vh;
-  }
-  .FlexLocation h3{
-    width: 35vw;
-  }
-  .footer-center {
-    align-items: center; /* Align items vertically */
-    margin-top: 4vh;
-  }
-  .footer-center a{
-    font-size: 20px;
-  
-  }
-  .footer-center div {
-    display: flex; /* Make divs flex containers */
-    align-items: center; /* Align items vertically */
-    margin-right: 0px;
-  
-  }
-  
-  .footer-center i {
-    margin-right: -60px;
-    font-size: 3vh;
-    
-    
-  }
+  /* Custom CSS for footer */
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center; /* Center align the text */
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to new line */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+
+.footer-content {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center align the items vertically */
+  margin-top: 20px;
+}
+
+.footer-contact div {
+  margin-right: 20px; /* Add some space between items */
+}
+
+.footer-contact i {
+  margin-right: 5px; /* Adjust icon spacing */
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-disclaimer {
+  text-align: right;
+  margin-top: 20px;
+  margin-left:25vw;
+}
+
   @media screen and (max-width: 600px) {
     .content {
       text-align: center; /* Center items on smaller screens */
